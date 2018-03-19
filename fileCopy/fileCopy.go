@@ -6,15 +6,15 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	
-	gh "github.com/ovace/pkg/fileHash"
+
+	gh "github.com/ovace/utils/fileHash"
 )
 
 func CopyFile(dst string, src string) (valid bool, n int64, err error) {
 
 	//check if target directory exists. If not create it with full path
 
-	log.Printf("src: %v\t dst: %v\t Dest Dir: %v\n ", src, dst,filepath.Dir(dst))
+	log.Printf("src: %v\t dst: %v\t Dest Dir: %v\n ", src, dst, filepath.Dir(dst))
 
 	if _, err := os.Stat(filepath.Dir(dst)); os.IsNotExist(err) {
 		os.MkdirAll(filepath.Dir(dst), os.ModePerm)
@@ -22,10 +22,10 @@ func CopyFile(dst string, src string) (valid bool, n int64, err error) {
 
 	// calcualate the hash of the source file
 	sHash, err := gh.FileHash(src)
-			if err != nil {
-				log.Fatalf("error calculating hash of src file: src: %v\t err: %v\n",src , err)
-				return false, n, err
-			}
+	if err != nil {
+		log.Fatalf("error calculating hash of src file: src: %v\t err: %v\n", src, err)
+		return false, n, err
+	}
 
 	sf, err := os.Open(src)
 	if err != nil {
@@ -44,15 +44,15 @@ func CopyFile(dst string, src string) (valid bool, n int64, err error) {
 		if err == nil {
 			err = os.Chmod(dst, si.Mode())
 			if err != nil {
-				log.Printf("error changing perms: %v\n" ,err)
+				log.Printf("error changing perms: %v\n", err)
 			}
 			dHash, err := gh.FileHash(dst)
 			if err != nil {
-				log.Fatalf("error calculating hash of dest file: dst: %v\t err: %v\n" ,dst, err)
+				log.Fatalf("error calculating hash of dest file: dst: %v\t err: %v\n", dst, err)
 				return false, n, err
 			}
 			if sHash != dHash {
-				log.Fatalf("error calculating hash of dest file: %v\n" , err)
+				log.Fatalf("error calculating hash of dest file: %v\n", err)
 				return false, n, err
 
 			}

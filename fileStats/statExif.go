@@ -5,7 +5,7 @@ import (
 	"log"
 )
 import (
-	gef "github.com/ovace/pkg/goexiftool"
+	gef "github.com/ovace/utils/goexiftool"
 )
 
 func StatExifTags(path string) (map[string]interface{}, error) {
