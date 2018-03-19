@@ -1,0 +1,724 @@
+{
+   2 "$schema": "http://json-schema.org/draft-04/schema#",
+      3 "definitions": {},
+      4 "id": "http://example.com/example.json",
+      5 "items": {
+         6 "id": "/items",
+         7 "properties": {
+            8 "Aperture": {
+               9 "default": 2.6000000000000001,
+               10 "description": "An explanation about the purpose of this instance.",
+               11 "id": "/items/properties/Aperture",
+               12 "title": "The aperture schema",
+               13 "type": "number"
+               14
+            },
+            15 "ApertureValue": {
+               16 "default": 2.6000000000000001,
+               17 "description": "An explanation about the purpose of this instance.",
+               18 "id": "/items/properties/ApertureValue",
+               19 "title": "The aperturevalue schema",
+               20 "type": "number"
+               21
+            },
+            22 "ApplicationRecordVersion": {
+               23 "default": 4,
+               24 "description": "An explanation about the purpose of this instance.",
+               25 "id": "/items/properties/ApplicationRecordVersion",
+               26 "title": "The applicationrecordversion schema",
+               27 "type": "integer"
+               28
+            },
+            29 "BitsPerSample": {
+               30 "default": 8,
+               31 "description": "An explanation about the purpose of this instance.",
+               32 "id": "/items/properties/BitsPerSample",
+               33 "title": "The bitspersample schema",
+               34 "type": "integer"
+               35
+            },
+            36 "BrightnessValue": {
+               37 "default": 5.55859375,
+               38 "description": "An explanation about the purpose of this instance.",
+               39 "id": "/items/properties/BrightnessValue",
+               40 "title": "The brightnessvalue schema",
+               41 "type": "number"
+               42
+            },
+            43 "CodedCharacterSet": {
+               44 "default": "UTF8",
+               45 "description": "An explanation about the purpose of this instance.",
+               46 "id": "/items/properties/CodedCharacterSet",
+               47 "title": "The codedcharacterset schema",
+               48 "type": "string"
+               49
+            },
+            50 "ColorComponents": {
+               51 "default": 3,
+               52 "description": "An explanation about the purpose of this instance.",
+               53 "id": "/items/properties/ColorComponents",
+               54 "title": "The colorcomponents schema",
+               55 "type": "integer"
+               56
+            },
+            57 "ColorSpace": {
+               58 "default": "sRGB",
+               59 "description": "An explanation about the purpose of this instance.",
+               60 "id": "/items/properties/ColorSpace",
+               61 "title": "The colorspace schema",
+               62 "type": "string"
+               63
+            },
+            64 "ComponentsConfiguration": {
+               65 "default": "Y, Cb, Cr, -",
+               66 "description": "An explanation about the purpose of this instance.",
+               67 "id": "/items/properties/ComponentsConfiguration",
+               68 "title": "The componentsconfiguration schema",
+               69 "type": "string"
+               70
+            },
+            71 "Compression": {
+               72 "default": "JPEG (old-style)",
+               73 "description": "An explanation about the purpose of this instance.",
+               74 "id": "/items/properties/Compression",
+               75 "title": "The compression schema",
+               76 "type": "string"
+               77
+            },
+            78 "CreateDate": {
+               79 "default": "2013:07:13 10:32:56",
+               80 "description": "An explanation about the purpose of this instance.",
+               81 "id": "/items/properties/CreateDate",
+               82 "title": "The createdate schema",
+               83 "type": "string"
+               84
+            },
+            85 "CurrentIPTCDigest": {
+               86 "default": "b443520a10119da99c2550175e6d0efb",
+               87 "description": "An explanation about the purpose of this instance.",
+               88 "id": "/items/properties/CurrentIPTCDigest",
+               89 "title": "The currentiptcdigest schema",
+               90 "type": "string"
+               91
+            },
+            92 "DateTimeOriginal": {
+               93 "default": "2013:07:13 10:32:56",
+               94 "description": "An explanation about the purpose of this instance.",
+               95 "id": "/items/properties/DateTimeOriginal",
+               96 "title": "The datetimeoriginal schema",
+               97 "type": "string"
+               98
+            },
+            99 "Directory": {
+               100 "default": "c:/Users/mamnoon/My_Workspace/goProjects/src/github.com/ovace/albumMgmt/Pictures/org",
+               101 "description": "An explanation about the purpose of this instance.",
+               102 "id": "/items/properties/Directory",
+               103 "title": "The directory schema",
+               104 "type": "string"
+               105
+            },
+            106 "EncodingProcess": {
+               107 "default": "Baseline DCT, Huffman coding",
+               108 "description": "An explanation about the purpose of this instance.",
+               109 "id": "/items/properties/EncodingProcess",
+               110 "title": "The encodingprocess schema",
+               111 "type": "string"
+               112
+            },
+            113 "EnvelopeRecordVersion": {
+               114 "default": 4,
+               115 "description": "An explanation about the purpose of this instance.",
+               116 "id": "/items/properties/EnvelopeRecordVersion",
+               117 "title": "The enveloperecordversion schema",
+               118 "type": "integer"
+               119
+            },
+            120 "ExifByteOrder": {
+               121 "default": "Little-endian (Intel, II)",
+               122 "description": "An explanation about the purpose of this instance.",
+               123 "id": "/items/properties/ExifByteOrder",
+               124 "title": "The exifbyteorder schema",
+               125 "type": "string"
+               126
+            },
+            127 "ExifImageHeight": {
+               128 "default": 2448,
+               129 "description": "An explanation about the purpose of this instance.",
+               130 "id": "/items/properties/ExifImageHeight",
+               131 "title": "The exifimageheight schema",
+               132 "type": "integer"
+               133
+            },
+            134 "ExifImageWidth": {
+               135 "default": 3264,
+               136 "description": "An explanation about the purpose of this instance.",
+               137 "id": "/items/properties/ExifImageWidth",
+               138 "title": "The exifimagewidth schema",
+               139 "type": "integer"
+               140
+            },
+            141 "ExifToolVersion": {
+               142 "default": 10.609999999999999,
+               143 "description": "An explanation about the purpose of this instance.",
+               144 "id": "/items/properties/ExifToolVersion",
+               145 "title": "The exiftoolversion schema",
+               146 "type": "number"
+               147
+            },
+            148 "ExifVersion": {
+               149 "default": "0220",
+               150 "description": "An explanation about the purpose of this instance.",
+               151 "id": "/items/properties/ExifVersion",
+               152 "title": "The exifversion schema",
+               153 "type": "string"
+               154
+            },
+            155 "ExposureCompensation": {
+               156 "default": 0,
+               157 "description": "An explanation about the purpose of this instance.",
+               158 "id": "/items/properties/ExposureCompensation",
+               159 "title": "The exposurecompensation schema",
+               160 "type": "integer"
+               161
+            },
+            162 "ExposureMode": {
+               163 "default": "Auto",
+               164 "description": "An explanation about the purpose of this instance.",
+               165 "id": "/items/properties/ExposureMode",
+               166 "title": "The exposuremode schema",
+               167 "type": "string"
+               168
+            },
+            169 "ExposureProgram": {
+               170 "default": "Aperture-priority AE",
+               171 "description": "An explanation about the purpose of this instance.",
+               172 "id": "/items/properties/ExposureProgram",
+               173 "title": "The exposureprogram schema",
+               174 "type": "string"
+               175
+            },
+            176 "ExposureTime": {
+               177 "default": "1/165",
+               178 "description": "An explanation about the purpose of this instance.",
+               179 "id": "/items/properties/ExposureTime",
+               180 "title": "The exposuretime schema",
+               181 "type": "string"
+               182
+            },
+            183 "FNumber": {
+               184 "default": 2.6000000000000001,
+               185 "description": "An explanation about the purpose of this instance.",
+               186 "id": "/items/properties/FNumber",
+               187 "title": "The fnumber schema",
+               188 "type": "number"
+               189
+            },
+            190 "FileAccessDate": {
+               191 "default": "2017:05:31 21:53:26-05:00",
+               192 "description": "An explanation about the purpose of this instance.",
+               193 "id": "/items/properties/FileAccessDate",
+               194 "title": "The fileaccessdate schema",
+               195 "type": "string"
+               196
+            },
+            197 "FileCreateDate": {
+               198 "default": "2017:05:31 21:53:26-05:00",
+               199 "description": "An explanation about the purpose of this instance.",
+               200 "id": "/items/properties/FileCreateDate",
+               201 "title": "The filecreatedate schema",
+               202 "type": "string"
+               203
+            },
+            204 "FileModifyDate": {
+               205 "default": "2017:05:31 21:53:26-05:00",
+               206 "description": "An explanation about the purpose of this instance.",
+               207 "id": "/items/properties/FileModifyDate",
+               208 "title": "The filemodifydate schema",
+               209 "type": "string"
+               210
+            },
+            211 "FileName": {
+               212 "default": "20130713_103256_3264x2448_SPH_L710_001.jpg",
+               213 "description": "An explanation about the purpose of this instance.",
+               214 "id": "/items/properties/FileName",
+               215 "title": "The filename schema",
+               216 "type": "string"
+               217
+            },
+            218 "FilePermissions": {
+               219 "default": "rw-rw-rw-",
+               220 "description": "An explanation about the purpose of this instance.",
+               221 "id": "/items/properties/FilePermissions",
+               222 "title": "The filepermissions schema",
+               223 "type": "string"
+               224
+            },
+            225 "FileSize": {
+               226 "default": "3.7 MB",
+               227 "description": "An explanation about the purpose of this instance.",
+               228 "id": "/items/properties/FileSize",
+               229 "title": "The filesize schema",
+               230 "type": "string"
+               231
+            },
+            232 "FileType": {
+               233 "default": "JPEG",
+               234 "description": "An explanation about the purpose of this instance.",
+               235 "id": "/items/properties/FileType",
+               236 "title": "The filetype schema",
+               237 "type": "string"
+               238
+            },
+            239 "FileTypeExtension": {
+               240 "default": "jpg",
+               241 "description": "An explanation about the purpose of this instance.",
+               242 "id": "/items/properties/FileTypeExtension",
+               243 "title": "The filetypeextension schema",
+               244 "type": "string"
+               245
+            },
+            246 "Flash": {
+               247 "default": "No Flash",
+               248 "description": "An explanation about the purpose of this instance.",
+               249 "id": "/items/properties/Flash",
+               250 "title": "The flash schema",
+               251 "type": "string"
+               252
+            },
+            253 "FlashpixVersion": {
+               254 "default": "0100",
+               255 "description": "An explanation about the purpose of this instance.",
+               256 "id": "/items/properties/FlashpixVersion",
+               257 "title": "The flashpixversion schema",
+               258 "type": "string"
+               259
+            },
+            260 "FocalLength": {
+               261 "default": "3.7 mm",
+               262 "description": "An explanation about the purpose of this instance.",
+               263 "id": "/items/properties/FocalLength",
+               264 "title": "The focallength schema",
+               265 "type": "string"
+               266
+            },
+            267 "FocalLength35efl": {
+               268 "default": "3.7 mm",
+               269 "description": "An explanation about the purpose of this instance.",
+               270 "id": "/items/properties/FocalLength35efl",
+               271 "title": "The focallength35efl schema",
+               272 "type": "string"
+               273
+            },
+            274 "IPTCDigest": {
+               275 "default": "b443520a10119da99c2550175e6d0efb",
+               276 "description": "An explanation about the purpose of this instance.",
+               277 "id": "/items/properties/IPTCDigest",
+               278 "title": "The iptcdigest schema",
+               279 "type": "string"
+               280
+            },
+            281 "ISO": {
+               282 "default": 80,
+               283 "description": "An explanation about the purpose of this instance.",
+               284 "id": "/items/properties/ISO",
+               285 "title": "The iso schema",
+               286 "type": "integer"
+               287
+            },
+            288 "ImageHeight": {
+               289 "default": 2448,
+               290 "description": "An explanation about the purpose of this instance.",
+               291 "id": "/items/properties/ImageHeight",
+               292 "title": "The imageheight schema",
+               293 "type": "integer"
+               294
+            },
+            295 "ImageSize": {
+               296 "default": "3264x2448",
+               297 "description": "An explanation about the purpose of this instance.",
+               298 "id": "/items/properties/ImageSize",
+               299 "title": "The imagesize schema",
+               300 "type": "string"
+               301
+            },
+            302 "ImageUniqueID": {
+               303 "default": "GDFI02",
+               304 "description": "An explanation about the purpose of this instance.",
+               305 "id": "/items/properties/ImageUniqueID",
+               306 "title": "The imageuniqueid schema",
+               307 "type": "string"
+               308
+            },
+            309 "ImageWidth": {
+               310 "default": 3264,
+               311 "description": "An explanation about the purpose of this instance.",
+               312 "id": "/items/properties/ImageWidth",
+               313 "title": "The imagewidth schema",
+               314 "type": "integer"
+               315
+            },
+            316 "InteropIndex": {
+               317 "default": "R98 - DCF basic file (sRGB)",
+               318 "description": "An explanation about the purpose of this instance.",
+               319 "id": "/items/properties/InteropIndex",
+               320 "title": "The interopindex schema",
+               321 "type": "string"
+               322
+            },
+            323 "InteropVersion": {
+               324 "default": "0100",
+               325 "description": "An explanation about the purpose of this instance.",
+               326 "id": "/items/properties/InteropVersion",
+               327 "title": "The interopversion schema",
+               328 "type": "string"
+               329
+            },
+            330 "LightSource": {
+               331 "default": "Unknown",
+               332 "description": "An explanation about the purpose of this instance.",
+               333 "id": "/items/properties/LightSource",
+               334 "title": "The lightsource schema",
+               335 "type": "string"
+               336
+            },
+            337 "LightValue": {
+               338 "default": 10.4,
+               339 "description": "An explanation about the purpose of this instance.",
+               340 "id": "/items/properties/LightValue",
+               341 "title": "The lightvalue schema",
+               342 "type": "number"
+               343
+            },
+            344 "MIMEType": {
+               345 "default": "image/jpeg",
+               346 "description": "An explanation about the purpose of this instance.",
+               347 "id": "/items/properties/MIMEType",
+               348 "title": "The mimetype schema",
+               349 "type": "string"
+               350
+            },
+            351 "Make": {
+               352 "default": "SAMSUNG",
+               353 "description": "An explanation about the purpose of this instance.",
+               354 "id": "/items/properties/Make",
+               355 "title": "The make schema",
+               356 "type": "string"
+               357
+            },
+            358 "MaxApertureValue": {
+               359 "default": 2.6000000000000001,
+               360 "description": "An explanation about the purpose of this instance.",
+               361 "id": "/items/properties/MaxApertureValue",
+               362 "title": "The maxaperturevalue schema",
+               363 "type": "number"
+               364
+            },
+            365 "Megapixels": {
+               366 "default": 8,
+               367 "description": "An explanation about the purpose of this instance.",
+               368 "id": "/items/properties/Megapixels",
+               369 "title": "The megapixels schema",
+               370 "type": "integer"
+               371
+            },
+            372 "MeteringMode": {
+               373 "default": "Center-weighted average",
+               374 "description": "An explanation about the purpose of this instance.",
+               375 "id": "/items/properties/MeteringMode",
+               376 "title": "The meteringmode schema",
+               377 "type": "string"
+               378
+            },
+            379 "Model": {
+               380 "default": "SPH-L710",
+               381 "description": "An explanation about the purpose of this instance.",
+               382 "id": "/items/properties/Model",
+               383 "title": "The model schema",
+               384 "type": "string"
+               385
+            },
+            386 "ModifyDate": {
+               387 "default": "2017:02:20 18:31:00",
+               388 "description": "An explanation about the purpose of this instance.",
+               389 "id": "/items/properties/ModifyDate",
+               390 "title": "The modifydate schema",
+               391 "type": "string"
+               392
+            },
+            393 "Orientation": {
+               394 "default": "Horizontal (normal)",
+               395 "description": "An explanation about the purpose of this instance.",
+               396 "id": "/items/properties/Orientation",
+               397 "title": "The orientation schema",
+               398 "type": "string"
+               399
+            },
+            400 "RegionInfo": {
+               401 "id": "/items/properties/RegionInfo",
+               402 "properties": {
+                  403 "AppliedToDimensions": {
+                     404 "id": "/items/properties/RegionInfo/properties/AppliedToDimensions",
+                     405 "properties": {
+                        406 "H": {
+                           407 "default": 2448,
+                           408 "description": "An explanation about the purpose of this instance.",
+                           409 "id": "/items/properties/RegionInfo/properties/AppliedToDimensions/properties/H",
+                           410 "title": "The h schema",
+                           411 "type": "integer"
+                           412
+                        },
+                        413 "Unit": {
+                           414 "default": "pixel",
+                           415 "description": "An explanation about the purpose of this instance.",
+                           416 "id": "/items/properties/RegionInfo/properties/AppliedToDimensions/properties/Unit",
+                           417 "title": "The unit schema",
+                           418 "type": "string"
+                           419
+                        },
+                        420 "W": {
+                           421 "default": 3264,
+                           422 "description": "An explanation about the purpose of this instance.",
+                           423 "id": "/items/properties/RegionInfo/properties/AppliedToDimensions/properties/W",
+                           424 "title": "The w schema",
+                           425 "type": "integer"
+                           426
+                        }
+                        427
+                     },
+                     428 "type": "object"
+                     429
+                  },
+                  430 "RegionList": {
+                     431 "id": "/items/properties/RegionInfo/properties/RegionList",
+                     432 "items": {
+                        433 "id": "/items/properties/RegionInfo/properties/RegionList/items",
+                        434 "properties": {
+                           435 "Area": {
+                              436 "id": "/items/properties/RegionInfo/properties/RegionList/items/properties/Area",
+                              437 "properties": {
+                                 438 "H": {
+                                    439 "default": 0.040849700000000003,
+                                    440 "description": "An explanation about the purpose of this instance.",
+                                    441 "id": "/items/properties/RegionInfo/properties/RegionList/items/properties/Area/properties/H",
+                                    442 "title": "The h schema",
+                                    443 "type": "number"
+                                    444
+                                 },
+                                 445 "Unit": {
+                                    446 "default": "normalized",
+                                    447 "description": "An explanation about the purpose of this instance.",
+                                    448 "id": "/items/properties/RegionInfo/properties/RegionList/items/properties/Area/properties/Unit",
+                                    449 "title": "The unit schema",
+                                    450 "type": "string"
+                                    451
+                                 },
+                                 452 "W": {
+                                    453 "default": 0.0248162,
+                                    454 "description": "An explanation about the purpose of this instance.",
+                                    455 "id": "/items/properties/RegionInfo/properties/RegionList/items/properties/Area/properties/W",
+                                    456 "title": "The w schema",
+                                    457 "type": "number"
+                                    458
+                                 },
+                                 459 "X": {
+                                    460 "default": 0.61994499999999997,
+                                    461 "description": "An explanation about the purpose of this instance.",
+                                    462 "id": "/items/properties/RegionInfo/properties/RegionList/items/properties/Area/properties/X",
+                                    463 "title": "The x schema",
+                                    464 "type": "number"
+                                    465
+                                 },
+                                 466 "Y": {
+                                    467 "default": 0.49550699999999998,
+                                    468 "description": "An explanation about the purpose of this instance.",
+                                    469 "id": "/items/properties/RegionInfo/properties/RegionList/items/properties/Area/properties/Y",
+                                    470 "title": "The y schema",
+                                    471 "type": "number"
+                                    472
+                                 }
+                                 473
+                              },
+                              474 "type": "object"
+                              475
+                           },
+                           476 "Name": {
+                              477 "default": "Shaheen Ahmed",
+                              478 "description": "An explanation about the purpose of this instance.",
+                              479 "id": "/items/properties/RegionInfo/properties/RegionList/items/properties/Name",
+                              480 "title": "The name schema",
+                              481 "type": "string"
+                              482
+                           },
+                           483 "Type": {
+                              484 "default": "Face",
+                              485 "description": "An explanation about the purpose of this instance.",
+                              486 "id": "/items/properties/RegionInfo/properties/RegionList/items/properties/Type",
+                              487 "title": "The type schema",
+                              488 "type": "string"
+                              489
+                           }
+                           490
+                        },
+                        491 "type": "object"
+                        492
+                     },
+                     493 "type": "array"
+                     494
+                  }
+                  495
+               },
+               496 "type": "object"
+               497
+            },
+            498 "ResolutionUnit": {
+               499 "default": "inches",
+               500 "description": "An explanation about the purpose of this instance.",
+               501 "id": "/items/properties/ResolutionUnit",
+               502 "title": "The resolutionunit schema",
+               503 "type": "string"
+               504
+            },
+            505 "SceneCaptureType": {
+               506 "default": "Standard",
+               507 "description": "An explanation about the purpose of this instance.",
+               508 "id": "/items/properties/SceneCaptureType",
+               509 "title": "The scenecapturetype schema",
+               510 "type": "string"
+               511
+            },
+            512 "SceneType": {
+               513 "default": "Directly photographed",
+               514 "description": "An explanation about the purpose of this instance.",
+               515 "id": "/items/properties/SceneType",
+               516 "title": "The scenetype schema",
+               517 "type": "string"
+               518
+            },
+            519 "SensingMethod": {
+               520 "default": "One-chip color area",
+               521 "description": "An explanation about the purpose of this instance.",
+               522 "id": "/items/properties/SensingMethod",
+               523 "title": "The sensingmethod schema",
+               524 "type": "string"
+               525
+            },
+            526 "ShutterSpeed": {
+               527 "default": "1/165",
+               528 "description": "An explanation about the purpose of this instance.",
+               529 "id": "/items/properties/ShutterSpeed",
+               530 "title": "The shutterspeed schema",
+               531 "type": "string"
+               532
+            },
+            533 "ShutterSpeedValue": {
+               534 "default": "1/165",
+               535 "description": "An explanation about the purpose of this instance.",
+               536 "id": "/items/properties/ShutterSpeedValue",
+               537 "title": "The shutterspeedvalue schema",
+               538 "type": "string"
+               539
+            },
+            540 "Software": {
+               541 "default": "L710VPBMD4",
+               542 "description": "An explanation about the purpose of this instance.",
+               543 "id": "/items/properties/Software",
+               544 "title": "The software schema",
+               545 "type": "string"
+               546
+            },
+            547 "SourceFile": {
+               548 "default": "c:/Users/mamnoon/My_Workspace/goProjects/src/github.com/ovace/albumMgmt/Pictures/org/20130713_103256_3264x2448_SPH_L710_001.jpg",
+               549 "description": "An explanation about the purpose of this instance.",
+               550 "id": "/items/properties/SourceFile",
+               551 "title": "The sourcefile schema",
+               552 "type": "string"
+               553
+            },
+            554 "ThumbnailImage": {
+               555 "default": "(Binary data 6768 bytes, use -b option to extract)",
+               556 "description": "An explanation about the purpose of this instance.",
+               557 "id": "/items/properties/ThumbnailImage",
+               558 "title": "The thumbnailimage schema",
+               559 "type": "string"
+               560
+            },
+            561 "ThumbnailLength": {
+               562 "default": 6768,
+               563 "description": "An explanation about the purpose of this instance.",
+               564 "id": "/items/properties/ThumbnailLength",
+               565 "title": "The thumbnaillength schema",
+               566 "type": "integer"
+               567
+            },
+            568 "ThumbnailOffset": {
+               569 "default": 4962,
+               570 "description": "An explanation about the purpose of this instance.",
+               571 "id": "/items/properties/ThumbnailOffset",
+               572 "title": "The thumbnailoffset schema",
+               573 "type": "integer"
+               574
+            },
+            575 "UserComment": {
+               576 "default": "",
+               577 "description": "An explanation about the purpose of this instance.",
+               578 "id": "/items/properties/UserComment",
+               579 "title": "The usercomment schema",
+               580 "type": "string"
+               581
+            },
+            582 "WhiteBalance": {
+               583 "default": "Auto",
+               584 "description": "An explanation about the purpose of this instance.",
+               585 "id": "/items/properties/WhiteBalance",
+               586 "title": "The whitebalance schema",
+               587 "type": "string"
+               588
+            },
+            589 "XMPToolkit": {
+               590 "default": "XMP Core 5.1.2",
+               591 "description": "An explanation about the purpose of this instance.",
+               592 "id": "/items/properties/XMPToolkit",
+               593 "title": "The xmptoolkit schema",
+               594 "type": "string"
+               595
+            },
+            596 "XResolution": {
+               597 "default": 72,
+               598 "description": "An explanation about the purpose of this instance.",
+               599 "id": "/items/properties/XResolution",
+               600 "title": "The xresolution schema",
+               601 "type": "integer"
+               602
+            },
+            603 "YCbCrPositioning": {
+               604 "default": "Centered",
+               605 "description": "An explanation about the purpose of this instance.",
+               606 "id": "/items/properties/YCbCrPositioning",
+               607 "title": "The ycbcrpositioning schema",
+               608 "type": "string"
+               609
+            },
+            610 "YCbCrSubSampling": {
+               611 "default": "YCbCr4:2:2 (2 1)",
+               612 "description": "An explanation about the purpose of this instance.",
+               613 "id": "/items/properties/YCbCrSubSampling",
+               614 "title": "The ycbcrsubsampling schema",
+               615 "type": "string"
+               616
+            },
+            617 "YResolution": {
+               618 "default": 72,
+               619 "description": "An explanation about the purpose of this instance.",
+               620 "id": "/items/properties/YResolution",
+               621 "title": "The yresolution schema",
+               622 "type": "integer"
+               623
+            }
+            624
+         },
+         625 "type": "object"
+         626
+      },
+      627 "type": "array"
+   628
+}
